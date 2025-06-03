@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confirmação de Presença - Arthur</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <audio autoplay loop hidden>
+    <source src="musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <div class="form-container">
+    <h2><i class="fas fa-gift"></i> Confirme sua presença</h2>
+    <form id="confirmForm">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <select id="presenca" required>
+        <option value="">Selecione uma opção</option>
+        <option value="Presença Confirmada">Presença Confirmada</option>
+        <option value="Não Poderei Comparecer">Não Poderei Comparecer</option>
+      </select>
+      <button type="submit"><i class="fab fa-whatsapp"></i> Enviar Confirmação</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
